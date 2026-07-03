@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silence TSUMUGI | 大島紬×現代モードファッション</title>
+    <meta name="description"
+        content="泥染めの漆黒と繊細な職人技が生み出す伝統工芸「大島紬」と、現代のモードファッションが融合したジェンダーレスブランド「Silence」。静寂な美とストイックな強さを纏う。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <canvas id="confetti-canvas"></canvas>
+
+        <div class="bg-grid-overlay" id="grid-overlay"></div>
+
+        <aside class="side-bar side-bar-left" id="sidebar-left">
+            <a href="index.html" class="brand-logo-vertical" id="brand-logo-left">Silence</a>
+            <div class="vertical-line-accent"></div>
+            <div class="side-social-links">
+                <a href="#" class="side-social-link" id="link-ig">INSTAGRAM</a>
+                <a href="#" class="side-social-link" id="link-pin">PINTEREST</a>
+            </div>
+        </aside>
+
+        <aside class="side-bar side-bar-right" id="sidebar-right">
+            <div class="vertical-line-accent"></div>
+            <div class="side-social-links">
+                <a href="#" class="side-social-link" id="link-tw">TWITTER</a>
+            </div>
+        </aside>
+
+        <header class="header-nav" id="header-nav">
+            <a href="index.html" class="brand-logo-mobile">Silence</a>
+            <nav>
+                <ul class="nav-links" id="nav-links-menu">
+                    <li><a href="Products.html" class="nav-link" id="nav-short">Products</a></li>
+                    <li><a href="contact.html" class="nav-link" id="nav-middle">Contact</a></li>
+                    <li><a href="access.html" class="nav-link" id="nav-long">Access</a></li>
+                </ul>
+            </nav>
+            <div class="header-meta">
+                <a href="#" class="header-meta-link" id="nav-search" aria-label="検索">SEARCH</a>
+                <a href="#" class="header-meta-link" id="nav-bag" data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebarCart" aria-label="ショッピングカート">
+                    BAG <i class="fa-solid fa-bag-shopping"></i> ({{ cartTotalQuantity }})
+                </a>
+                <button class="menu-trigger-mobile" id="hamburger-btn" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="hero-section" id="hero-section">
+                <div class="hero-bg-container">
+                    <img src="img/hero.png" alt="Silence mode garment style" class="hero-bg-image" id="hero-img">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <p class="hero-subtitle" id="hero-sub">Oshima Tsumugi Modernity</p>
+                    <h1 class="hero-title" id="hero-main-title">
+                        静寂を紡ぎ、<br><span>強さを纏う。</span>
+                    </h1>
+                    <p class="hero-description" id="hero-desc">
+                        奄美大島の泥染めが放つ、光を吸い込むような漆黒。職人が極限の緻密さで織りなす大島紬のテクスチャを、現代のストイックなジェンダーレスモードへ昇華させる。
+                    </p>
+                    <a href="#silhouette-section" class="cta-button" id="hero-cta">
+                        View Collection
+                        <span class="btn-line line-top"></span>
+                        <span class="btn-line line-right"></span>
+                        <span class="btn-line line-bottom"></span>
+                        <span class="btn-line line-left"></span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section-padding grid-system-line reveal" id="concept-section">
+                <div class="concept-grid">
+                    <div>
+                        <span class="section-label">Philosophy</span>
+                        <h2 class="concept-title" id="concept-main-title">
+                            伝統の「緻密」と、<br><span>モードの「静寂な美」の対峙。</span>
+                        </h2>
+                        <div class="concept-text">
+                            <p>
+                                大島紬（おおしまつむぎ）は、経糸（たていと）と緯糸（よこいと）の緻密な交差によって生み出される、世界でも類を見ないほど精巧な日本の伝統織物です。泥土に含まれる鉄分とテーチ木（シャリンバイ）のタンニンが反応し、<strong>「泥染め」</strong>ならではの、どこまでも深く、吸い込まれるような独自の漆黒が生まれます。
+                            </p>
+                            <p>
+                                Silenceは、この極限の職人技術がもたらす重厚感ある「静寂」を、現代的なジェンダーレスシルエットと融合。孤高でストイックな美学を落とし込みました。
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <blockquote class="concept-quote" id="concept-quote-text">
+                            「余分な装飾を削ぎ落とし、ただ緻密な織り糸の強さだけを際立たせる。それがSilenceの美学です。」
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding silhouette-section reveal" id="silhouette-section">
+                <div class="section-header">
+                    <span class="section-label">Categories</span>
+                    <h2 class="section-title" id="silhouette-title">Select by <span>Silhouette</span></h2>
+                </div>
+                <div class="silhouette-grid">
+                    <div class="silhouette-card" id="silhouette-short" onclick="location.href='#';">
+                        <img src="img/short.png" alt="Short Kimono Jacket" class="silhouette-image" id="img-short">
+                        <div class="silhouette-content">
+                            <span class="silhouette-num">I</span>
+                            <h3 class="silhouette-name">Short Silhouette</h3>
+                            <p class="silhouette-desc">伝統的な羽織をショート丈のモードジャケットへ再解釈。直線的なカットが強い個性を引き出します。</p>
+                            <div class="silhouette-action">Explore<span></span></div>
+                        </div>
+                    </div>
+
+                    <div class="silhouette-card" id="silhouette-middle" onclick="location.href='#';">
+                        <img src="img/middle.png" alt="Middle Kimono Coat" class="silhouette-image" id="img-middle">
+                        <div class="silhouette-content">
+                            <span class="silhouette-num">II</span>
+                            <h3 class="silhouette-name">Middle Silhouette</h3>
+                            <p class="silhouette-desc">腰回りから膝上を優美に覆うミドルシルエット。流れるようなドレープ感と、大島紬の張り感が美しく調和。</p>
+                            <div class="silhouette-action">Explore<span></span></div>
+                        </div>
+                    </div>
+
+                    <div class="silhouette-card" id="silhouette-long" onclick="location.href='#';">
+                        <img src="img/long.png" alt="Long Kimono Trench" class="silhouette-image" id="img-long">
+                        <div class="silhouette-content">
+                            <span class="silhouette-num">III</span>
+                            <h3 class="silhouette-name">Long Silhouette</h3>
+                            <p class="silhouette-desc">足元まで美しく流れる超ロング丈のガウン＆トレンチ。歩くたびに舞うような躍動感とストイックな佇まい。</p>
+                            <div class="silhouette-action">Explore<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding style-section reveal" id="style-lookbook">
+                <div class="section-header">
+                    <span class="section-label">Lookbook</span>
+                    <h2 class="section-title" id="style-title">Stoic <span>Styles</span></h2>
+                </div>
+                <div class="style-grid">
+                    <div class="style-item wide tall" id="style-1">
+                        <img src="img/hero.png" alt="Style Look 1" class="style-img">
+                        <div class="style-overlay">
+                            <span class="style-tag">LOOK 01 / GENDERLESS</span>
+                            <h3 class="style-name">泥染め漆黒のオーバーサイズガウン</h3>
+                        </div>
+                    </div>
+                    <div class="style-item tall" id="style-2">
+                        <img src="img/long.png" alt="Style Look 2" class="style-img">
+                        <div class="style-overlay">
+                            <span class="style-tag">LOOK 02 / SILHOUETTE III</span>
+                            <h3 class="style-name">ストイックロングライン</h3>
+                        </div>
+                    </div>
+                    <div class="style-item" id="style-3">
+                        <img src="img/short.png" alt="Style Look 3" class="style-img">
+                        <div class="style-overlay">
+                            <span class="style-tag">LOOK 03 / SILHOUETTE I</span>
+                            <h3 class="style-name">羽織ショートスタイリング</h3>
+                        </div>
+                    </div>
+                    <div class="style-item" id="style-4">
+                        <img src="img/middle.png" alt="Style Look 4" class="style-img">
+                        <div class="style-overlay">
+                            <span class="style-tag">LOOK 04 / SILHOUETTE II</span>
+                            <h3 class="style-name">レイヤードミドルスタイル</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding reveal" id="craft-section">
+                <div class="craft-grid">
+                    <div class="craft-visual" id="craft-graphic">
+                        <div class="craft-inner">
+                            <img src="img/hero.png" alt="Craft Detail" class="craft-img">
+                            <div class="craft-texture-overlay"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="section-label">Craftsmanship</span>
+                        <h2 class="concept-title" id="craft-title">
+                            経緯が紡ぐ、<br><span>妥協なき職人の指先。</span>
+                        </h2>
+                        <ul class="craft-steps">
+                            <li class="craft-step">
+                                <span class="craft-step-num">01</span>
+                                <div>
+                                    <h3 class="craft-step-title">泥染め (Doro-zome)</h3>
+                                    <p class="craft-step-desc">
+                                        テーチ木の汁で数十回染めた後、鉄分豊富な奄美の泥田で染め上げる。この泥染めを何度も繰り返すことで、光の屈折を限りなく抑えた深い「漆黒」が誕生します。</p>
+                                </div>
+                            </li>
+                            <li class="craft-step">
+                                <span class="craft-step-num">02</span>
+                                <div>
+                                    <h3 class="craft-step-title">手織り (Hand Weaving)</h3>
+                                    <p class="craft-step-desc">
+                                        あらかじめ設計された細かい絣模様（かすりもよう）を表現するため、経糸と緯糸の柄が寸分の狂いもなく交差するよう、職人が手織機で1ミリ単位の微調整を重ねて織り上げます。
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="craft-step">
+                                <span class="craft-step-num">03</span>
+                                <div>
+                                    <h3 class="craft-step-title">現代への仕立て (Tailoring)</h3>
+                                    <p class="craft-step-desc">
+                                        大島紬が持つ特有 of 軽さとしなやかさ、絹100%の極上の肌触りを活かし、性別にとらわれない洗練されたシルエットへとアトリエで精密にカット・縫製します。
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="offcanvas offcanvas-end custom-cart-drawer" tabindex="-1" id="sidebarCart"
+            aria-labelledby="sidebarCartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebarCartLabel">SHOPPING BAG</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div class="cart-empty-message" v-if="cart.length === 0">
+                    <p>バッグに商品が入っていません。</p>
+                </div>
+
+                <div class="cart-items-list" v-else>
+                    <div class="cart-item" v-for="(item, index) in cart" :key="index">
+                        <div class="cart-item-img">
+                            <img :src="item.image" :alt="item.name">
+                        </div>
+                        <div class="cart-item-info">
+                            <h4 class="cart-item-name">{{ item.name }}</h4>
+                            <p class="cart-item-variant">Color: {{ item.colorName }}</p>
+                            <div class="cart-item-qty-wrapper mb-3">
+                                <div class="input-group input-group-sm"
+                                    style="max-width: 90px; border: 1px solid #ccc;">
+                                    <button class="btn btn-link text-dark p-0 border-0"
+                                        style="width: 28px; text-decoration: none; font-size: 0.9rem; line-height: 1;"
+                                        type="button" @click="decreaseQty(index)"
+                                        :disabled="item.quantity <= 1">—</button>
+
+                                    <input type="number"
+                                        class="form-control text-center p-0 border-0 bg-transparent text-dark shadow-none"
+                                        style="font-size: 0.85rem; pointer-events: none;" v-model.number="item.quantity"
+                                        readonly>
+
+                                    <button class="btn btn-link text-dark p-0 border-0"
+                                        style="width: 28px; text-decoration: none; font-size: 0.9rem; line-height: 1;"
+                                        type="button" @click="increaseQty(index)">+</button>
+                                </div>
+                            </div>
+                            <p class="cart-item-price">¥{{ (item.price * item.quantity).toLocaleString() }}</p>
+                            <button class="cart-remove-btn" @click="removeFromCart(index)">削除</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span>¥{{ cartTotalPrice.toLocaleString() }}</span>
+                    </div>
+                </div>
+
+                <div class="cart-footer" v-if="cart.length > 0">
+                    <a href="cart.html" class="checkout-btn">SHOPPING BAGへ</a>
+                </div>
+            </div>
+        </div>
+
+        <footer id="main-footer">
+            <ul class="footer-nav">
+                <li><a href="Products.html" class="footer-nav-link" id="foot-about">Products</a></li>
+                <li><a href="contact.html" class="footer-nav-link" id="foot-contact">Contact</a></li>
+                <li><a href="access.html" class="footer-nav-link" id="foot-journal">Access</a></li>
+            </ul>
+            <div class="footer-logo" id="footer-brand">Silence<span>.</span></div>
+            <p class="footer-copy" id="footer-copy-text">&copy; 2026 Silence TSUMUGI CO. All rights reserved.</p>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="js/effects.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>
